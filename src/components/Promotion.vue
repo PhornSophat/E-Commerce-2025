@@ -14,7 +14,7 @@
     <!-- Text content -->
     <div class="relative w-78 flex flex-col left-6 justify-center items-center gap-y-10">
       <span class="text-4xl font-bold">{{ title }}</span>
-      <Buttom1 :btnText = 'btnText' :btnColor = 'btnColor' />
+      <Buttom1 :btnText = 'btnText' :btnColor = 'btnColor' @click="shopNow(Promotions)" />
     </div>
   </button>
 
@@ -36,7 +36,13 @@ export default {
       imgAlt: String,
       btnColor: String,
       btnText: String,
+      Promotions: Object
     },
+    methods: {
+      shopNow(Promotions) {
+        alert("Shop now clicked for promotion:" + Promotions.title );
+      }
+    }
 }
 
 </script>
