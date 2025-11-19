@@ -60,6 +60,7 @@ export default {
         :imgAlt = " item.imgAlt "
         :btnColor = " item.btnColor "
         :btnText = " item.btnText "
+        :Promotions = " item "
       />
      
     </div>
