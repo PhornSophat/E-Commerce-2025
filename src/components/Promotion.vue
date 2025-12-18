@@ -12,8 +12,8 @@
     />
 
     <!-- Text content -->
-    <div class="relative w-78 flex flex-col left-6 justify-center items-center gap-y-10">
-      <span class="text-4xl font-bold">{{ title }}</span>
+    <div class="relative w-78 flex flex-col left-6 justify-center gap-y-10">
+      <span class="text-4xl text-start font-bold">{{ title }}</span>
       <Buttom1 :btnText = 'btnText' :btnColor = 'btnColor' @click="shopNow(Promotions)" />
     </div>
   </button>
